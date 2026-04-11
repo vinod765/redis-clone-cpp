@@ -1,41 +1,30 @@
-# Prerequisites
-*.d
+# Build
+build/
+cmake-build-*/
 
-# Compiled Object files
-*.slo
-*.lo
+# Conan
+.conan/
+CMakeUserPresets.json
+
+# Compiled
 *.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
 *.a
-*.lib
+*.so
+*.out
 
 # Executables
-*.exe
-*.out
-*.app
+redis-server
+bench/bench
 
-# debug information files
-*.dwo
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# RDB snapshot
+*.rdb
